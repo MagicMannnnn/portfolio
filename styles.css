@@ -79,13 +79,11 @@ ul {
     }
 
 
-/* Center content vertically and horizontally */
+/* Center content horizontally */
 body {
     display: flex;
     justify-content: center; /* Centers horizontally */
-    align-items: center; /* Centers vertically */
-    height: 100vh; /* Full screen height */
-    margin: 0; /* Remove default margin */
+    margin: 0;
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
 }
