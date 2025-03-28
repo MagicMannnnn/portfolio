@@ -10,13 +10,37 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
     color: #333;
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    min-height: 100vh; /* Ensures at least full screen height */
+    overflow-y: auto;
+
+    background-image: url('images/bg.png'); /* Replace with your image path */
+    background-size: cover; /* Scales image to cover entire screen */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling */
+    background-attachment: fixed; /* Keeps image fixed on scroll */
 }
 
+
+/* Container to hold header and section */
+.container {
+    text-align: center;
+    background: white;
+    padding: 0px;
+    border-radius: 0px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 800px; /* Optional: to prevent it from growing too large */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header Styles */
 header {
     background-color: #333;
     color: white;
     padding: 20px;
-    text-align: center;
 }
 
     header h1 {
@@ -38,9 +62,10 @@ nav {
             text-decoration: underline;
         }
 
+/* Section Styles */
 section {
     padding: 20px;
-    margin: 20px 0;
+    margin-top: 20px;
 }
 
     section h2 {
@@ -48,13 +73,30 @@ section {
         margin-bottom: 10px;
     }
 
+    section p {
+        font-size: 1.1em;
+        margin-bottom: 20px;
+    }
+
+
 .project img {
     width: 100%;
     max-width: 600px;
     height: auto;
     border: 2px solid #ddd;
-    margin: 20px 0;
+    margin: 0 auto;
 }
+
+    .project img.img-long {
+        width: auto; /* Let width adjust automatically */
+        max-width: 100%; /* Prevents it from overflowing */
+        max-height: 500px; /* Limits the height */
+        display: block; /* Avoids extra spacing issues */
+        border: 2px solid #ddd;
+        margin: 0 auto;
+    }
+
+
 
 .project a {
     display: inline-block;
@@ -79,20 +121,6 @@ ul {
     }
 
 
-/* Center content horizontally */
-body {
-    display: flex;
-    justify-content: center; /* Centers horizontally */
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-}
-
-/* Style the container */
-.container {
-    text-align: center; /* Centers text inside */
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+h1, h2{
+    margin-bottom: 20px; /* Adjust spacing as needed */
 }

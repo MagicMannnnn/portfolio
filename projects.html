@@ -7,27 +7,49 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>My Projects</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="projects.html">Projects</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
+    <div class="container">
+        <header>
+            <h1>My Projects</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
+        <section class="project">
+            <h2>3D RTS Game (C++)</h2>
+            <img src="images/rts.png" alt="RTS Game Screenshot">
+            <p>A real-time strategy game currently in development using c++ and OpenGL with features including pathfinding, a resource management system and dynamic lighting</p>
+        </section>
 
-    <section class="project">
-        <h2>3D RTS Game (C++)</h2>
-        <img src="images/rts_game.png" alt="RTS Game Screenshot">
-        <p>A real-time strategy game currently in development using c++ and OpenGL</p>
-    </section>
+        <section class="project">
+            <h2>Neural Network</h2>
+            <img class="img-long" src="images/nn.png" alt="Neural Network">
+            <p>A Feed Forward Nerual Network written in C++ which allows for training using backpropogation and the ability to load and save networks - also has been used in a Deep-Q learning Model.</p>
+            <a href="https://github.com/MagicMannnnn/cpp-Neural-Network" target="_blank">View on GitHub</a>
+        </section>
 
-    <section class="project">
-        <h2>Neural Network</h2>
-        <img src="images/neural_network.png" alt="Neural Network">
-        <p>A Feed Forward Nerual Network written in C++ which allows for training using backpropogation and the ability to load and save networks -> also has been used in a Deep-Q learning Model.</p>
-        <a href="https://github.com/MagicMannnnn/cpp-Neural-Network" target="_blank">View on GitHub</a>
-    </section>
+        <section class="project">
+            <h2>Rubik's Cube Solver</h2>
+            <img src="images/solver.png" alt="Rubik's Cube">
+            <p>3D Rubik's Cube solver with AI integration, allowing users to match the virtual cube with their physical cube, and learn to solve the cube with a choice of methods. Analysis and feedback is provided for advanced users, as well as the abilty to race the AI with multiple difficulty levels</p>
+            <a href="https://github.com/MagicMannnnn/python-course" target="_blank">View documentation</a>
+        </section>
+
+        <section class="project">
+            <h2>Deep-Q Learning</h2>
+            <img src="images/snake.png" alt="Snake">
+            <p>Deep-Q Reinforcement learning project using the neural network module above, which trains an AI agent to play and improve at Snake</p>
+        </section>
+
+        <section class="project">
+            <h2>2D Physics Simulation</h2>
+            <img src="images/physics.png" alt="Snake">
+            <p>C++ Physics Simulation using Verlet Integration and the SDL2 library for graphics</p>
+        </section>
+    </div>
+    
+    
 </body>
 </html>
